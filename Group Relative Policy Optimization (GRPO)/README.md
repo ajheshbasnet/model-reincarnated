@@ -33,6 +33,20 @@ GPT-2 (Pretrained)
 
 ---
 
+## Qualitative Results: Before vs After GRPO
+
+The following outputs demonstrate the effect of the full SFT → Reward Model → GRPO pipeline on GPT-2's generation quality. The model before mid-training produces verbose, incoherent, and structurally inconsistent text with no preference alignment. After GRPO fine-tuning, the policy generates responses that are contextually grounded, concise, and aligned with human-preferred outputs — a direct consequence of the reward signal shaping the policy through group-relative advantage estimation.
+
+### Before GRPO Fine-Tuning
+
+![Before GRPO Fine-Tuning](https://raw.githubusercontent.com/ajheshbasnet/model-reincarnated/main/Group%20Relative%20Policy%20Optimization%20(GRPO)/before-mid-training.png)
+
+### After GRPO Fine-Tuning
+
+![After GRPO Fine-Tuning](https://raw.githubusercontent.com/ajheshbasnet/model-reincarnated/main/Group%20Relative%20Policy%20Optimization%20(GRPO)/AFTER-MID-TRAINING.png)
+
+---
+
 ## Stage 1 — Supervised Fine-Tuning (SFT)
 
 ### Objective
